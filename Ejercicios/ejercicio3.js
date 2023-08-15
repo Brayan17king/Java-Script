@@ -1,8 +1,8 @@
-/* Escribe una funcion que tome un array de números y un valor
+/*Escribe una funcion que tome un array de números y un valor
 objetivo como entrada, y devuelve un array de arrays que contenga pares de números
 en el array original que sumen al valor objetivo*/
 
-// Ponemos el array a operar
+//Ponemos el array a operar
 numeros = [2, 4, 3, 6, 9, 8];
 //ponemos el objevito al cual vamos a apuntar
 target = 10;
@@ -28,8 +28,7 @@ function array(nums, target) {
 }
 
 //llamamos la funcion y le pasamos los parametros que son el Array y el Target
-result = array(numeros, target);
-// Debería imprimir: [[2, 8], [4, 6]] que son los numeros que nos suman 10
-console.log(result);  
-
+resultado = array(numeros, target);
+//Debería imprimir: [[2, 8], [4, 6]] que son los numeros que nos suman 10
+console.log(resultado);  
 
