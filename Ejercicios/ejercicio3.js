@@ -32,3 +32,4 @@ resultado = array(numeros, target);
 //Debería imprimir: [[2, 8], [4, 6]] que son los numeros que nos suman 10
 console.log(resultado);  
 
+//Brayan Sneyder Martinez Cardenas 💫

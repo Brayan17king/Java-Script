@@ -25,3 +25,5 @@ function calcular(x){
 }
 
 calcular(22);
+
+//Brayan Sneyder Martinez Cardenas 💫

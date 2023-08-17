@@ -28,3 +28,5 @@ function suma() {
 
 //Imprimimos el resultado
 console.log(suma());
+
+//Brayan Sneyder Martinez Cardenas 💫
