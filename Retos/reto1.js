@@ -10,11 +10,37 @@ crear una nueva cadena. Comenzando con una cadena vacía, agregue alternativamen
 cadena b. Si una de las cadenas se agota antes que la otra, agregue las letras restantes de la otra
 cadena todo a la vez. El resultado es la nueva contraseña. */
 
-//Creamos una funcion y le pasamos 2 parametros que seran las cadenas 
+//Creamos la funcion ascii para validar cada caracter del string
+function ascii(cadena) {
+  //iniciamos un for para validar cada caracter
+  for (i = 0; i < cadena.length; i++) {
+    // Registramos el numero ascii del caracter actual
+    let caracter = cadena.charCodeAt(i);
+    //validamos que el codigo ascii del caracter pertenezca al intevalo entre [a-z] en la codificacion ASCII
+    if (caracter < 97 || caracter > 122) {
+      // ASCII A = 97 Z = 122
+      return true;
+    }
+  }
+  return false;
+}
+
+//Creamos una funcion y le pasamos 2 parametros que seran las cadenas
 function password(a, b) {
-  //Creamos una variable tipo string vacia donde guardaremos nuestra password  
+  //Comprobamos que las cadenas a y b no sean vacias
+  if (a == "" || b == "") {
+    return "Error no se puede convinar las contraseñas falta una palabra";
+    //Comprobamos que las cadenas a y b tengan menos de 25000 caracteres
+  } else if (a.length > 25000 || b.length > 25000) {
+    return "Error";
+  }
+  //Comprobamos que tanto a y b tengan caracteres que esten entre [a-z]
+  else if ((ascii(a) || ascii(b)) == true) {
+    return "Error ingreso caracteres invalidos";
+  }
+  //Creamos una variable tipo string vacia donde guardaremos nuestra password
   let result = "";
-  //Creamos dos variables tipo entero que contendrán las posiciones en las cadenas a y b
+  //Creamos dos contadores tipo entero que contendrán las posiciones en las cadenas a y b
   let i = 0;
   let j = 0;
   //Recorremos las posiciones en las cadenas a y b y agregamos cada una de las letras
@@ -31,7 +57,6 @@ function password(a, b) {
   //Retornamos nuestra password
   return result;
 }
-
-console.log(password("1263163", "fff"));
+console.log(password("aaa", "fff"));
 
 // Brayan Sneyder Martinez Cardenas 💫
