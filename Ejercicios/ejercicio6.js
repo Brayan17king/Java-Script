@@ -18,11 +18,15 @@ function agregar() {
 
 //Creamos la funcion para mostrar los valores
 function mostrar(){
+    //creamos un for para agregar los indices del 1 al 10
     for (let i = 0; i < 10; i++) {
+        //imprimimos los indices y ponemos los numeros del arreglo
         console.log(`${[i+1]} - ${numeros[i]}`);
     }
 }
 
+//llamamos la funcion agregar
  agregar();
+ //llamamos la funcion mostrar
  mostrar();
 
