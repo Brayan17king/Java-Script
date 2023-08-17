@@ -11,3 +11,5 @@ for (const digito of listaNumeros) {
     numeroTemporal += digito + ' ';
     console.log(numeroTemporal);
 }
+
+//Brayan Sneyder Martinez Cardenas 💫
